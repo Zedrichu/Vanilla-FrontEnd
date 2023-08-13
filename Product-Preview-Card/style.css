@@ -149,7 +149,7 @@ main {
     }
 
     .card img {
-        content: url('/images/image-product-desktop.jpg');
+        content: url('./images/image-product-desktop.jpg');
         object-fit: cover;
     }
 }

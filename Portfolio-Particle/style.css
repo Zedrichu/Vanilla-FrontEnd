@@ -22,8 +22,8 @@ a:hover {
     color: #E91E63;
 }
 
-h1 .header {
-    color: #E91E63;
+div .header {
+    color: #0da4f0;
     font-size: 2.5rem;
     font-weight: bold;
 }
