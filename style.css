@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    background: #2A2B32;
+}
+
+a {
+    color: hsl(30, 38%, 92%);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #E91E63;
+}
+
+div .header {
+    color: #0D73F0;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+canvas {
+    height: 100vh;
+    z-index: -100000;
+    position: fixed;
+    top: 0px;
+}
+
+.mb {
+    margin-bottom: 3rem;
+}
+
+.logo {
+    font-family: 'Monoton', cursive;
+    color: #E91E63;
+    font-size: 8rem;
+}
+
+.logo:hover {
+    color: hsl(30, 38%, 92%);
+}
+
+.links-list ul li {
+    list-style: none;
+    margin-right: 2rem;
+    width: 70%;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.links-list h1 {
+    color: #FFF;
+    font-size: 40px;
+}
+
+.links-list ul li a {
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: hsl(30, 38%, 92%);
+    cursor: pointer;
+    border-radius: 15px;
+    margin: 10px 10px;
+    background: #0c1d31a4;
+}
+
+.links-list ul li a span {
+    display: block;
+    padding: 10px 10px;
+    color: #0D73F0;
+    transition: all 0.5s ease-in-out;
+}
+
+.links-list ul li a:hover span {
+    color: hsl(30, 38%, 92%);
+}
+
+.links-list ul li a::before,
+.links-list ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+    background: linear-gradient(to left, #E91E63 0%, hsl(30, 38%, 92%) 50%, #E91E63 100%);
+    transition-delay: 0.2s;
+}
+
+.links-list ul li a::before {
+    right: 0;
+    top: 0;
+}
+
+.links-list ul li a::after {
+    left: 0;
+    bottom: 0;
+}
+
+.links-list ul li a span::before, 
+.links-list ul li a span::after {
+    content: '';
+    width: 3px;
+    height: 0;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+    background: linear-gradient(#E91E63 0%, hsl(30, 38%, 92%) 50%, #E91E63 100%);
+    transition-delay: 0.2s;
+}
+
+.links-list ul li a span::before {
+    left: 0;
+    top: 0;
+}
+
+.links-list ul li a span::after {
+    right: 0;
+    bottom: 0;
+}
+
+.links-list ul li a:hover::before,
+.links-list ul li a:hover::after {
+    width: 100%;
+    transition-delay: 0s;
+}
+
+.links-list ul li a:hover span::after,
+.links-list ul li a:hover span::before {
+    height: 100%;
+    transition-delay: 0.2s;
+}
+
+footer {
+    margin-top: 1rem;
+    margin-left: 15rem;
+    color: #FFF;
+    font-size: 4rem;
+}
+
+footer span {
+    font-family: 'Monoton';
+}
+
+
+
