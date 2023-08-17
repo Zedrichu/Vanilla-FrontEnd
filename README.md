@@ -4,6 +4,8 @@ Repository for various front-end challenges and basic applications written in va
 
 --------------
 
+* Dynamic &amp; Interactive particle background - Main Portfolio Page
+
 * Analytics Dashboard with dark-light mode toggle:
 
     <img src="./Analytics-Dashboard/result-light.png" alt="Light Mode" width="50%"/><img src="./Analytics-Dashboard/result-dark.png" alt="Dark Mode" width="50%"/>
@@ -11,10 +13,6 @@ Repository for various front-end challenges and basic applications written in va
 * Calculator application:
 
     <img src="./Calculator/result.png" alt="Calculator" width="80%"/>
-
-* Dynamic &amp; Interactive particle background:
-
-    <img src="./Portfolio-Particle/result.png" alt="Portfolio-Particle" width="80%"/>
 
 * Weather application connected to API for live location queries:
 
