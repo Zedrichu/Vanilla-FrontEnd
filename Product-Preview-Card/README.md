@@ -37,7 +37,7 @@ Add a screenshot of your solution. Then crop/optimize/edit your image however yo
 ### Links
 
 - Solution URL: [GitHub Repo](https://github.com/Zedrichu/Vanilla-FrontEnd/tree/main/Product-Preview-Card)
-<!-- - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Live Site URL: [Page](https://zedrichu.github.io/Vanilla-FrontEnd/Product-Preview-Card/index.html)
 
 ## My process
 

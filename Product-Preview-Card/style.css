@@ -29,6 +29,7 @@ main {
     border-radius: 10px;
     display: flex;
     flex-direction: row;
+    transition: all 1s ease-in-out;
 }
 
 .card img {

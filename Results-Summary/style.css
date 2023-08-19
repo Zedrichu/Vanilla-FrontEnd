@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: 'HankenGrotesk', sans-serif;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%);
+    min-width: 300;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    height: 450px;
+    width: 600px;
+    min-width: 450px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 10px 10px 20px hsl(221, 100%, 96%);
+    transition: all 1s ease-in-out;
+}
+
+.result-card {
+    /* min-width: 368px; */
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    background: linear-gradient(to top, 
+                    hsl(241, 81%, 54%), 
+                    hsl(252, 100%, 67%));
+}
+
+.result-card .header {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.result-card .circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, 
+            hsla(241, 72%, 46%, 0), 
+            hsla(256, 72%, 46%, 1));
+}
+
+.circle .score {
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.circle .max {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.result-card .quality {
+    font-size: 30px;
+    margin-top: 20px;
+    color: hsl(0, 0%, 100%)
+}
+
+.result-card .message {
+    width: 75%;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.container .summary-card {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 30px;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background: hsla(0, 0%, 0%, 0);
+}
+
+.summary-card .header {
+    color: hsl(224, 30%, 27%);
+    margin-top: -35px;
+    font-size: 22px;
+}
+
+.summary-card ul {
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    width: 90%;
+}
+
+.summary-card ul li {
+    list-style: none;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.summary-card ul li:last-child {
+    margin: none;
+}
+
+.summary-card ul li img {
+    flex-basis: 5%;
+    margin-left: -5px;
+    height: fit-content;
+}
+
+.summary-card ul li .name {
+    flex-basis: 40%;
+    margin-left: -10px;
+    text-align: start;
+}
+
+.summary-card ul li .score {
+    color: hsl(224, 30%, 27%);
+    font-size: 17px;
+    margin-right: -10px;
+}
+
+.summary-card ul li .max {
+    justify-self: flex-end;
+    font-size: 16px;
+    font-weight: 700;
+    color: hsla(224, 30%, 27%, 0.5)
+}
+
+.summary-card ul .reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+.summary-card ul .memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+.summary-card ul .verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+.summary-card ul .visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.summary-card .btn {
+    background: none;
+    border: none;
+    background: hsl(224, 30%, 27%);
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'HankenGrotesk';
+    font-weight: 500;
+    height: 45px;
+    width: 90%;
+    margin-top: -20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.summary-card .btn:hover,
+.summary-card .btn:active {
+    cursor: pointer;
+    background: linear-gradient(to top, 
+        hsl(241, 81%, 54%), 
+        hsl(252, 100%, 67%));
+    transition: all 0.2s ease;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .container {
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        min-width: 260;
+    }
+
+    .container .result-card {
+        width: 98%;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        justify-content: center;
+        flex-basis: 45%;
+        min-width: 260;
+    }
+
+    .container .result-card .message {
+        width: 60%;
+    }
+
+    .container .result-card .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .container .summary-card {
+        flex-basis: 55%;
+        height: 60%;
+        width: 90%;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .container .summary-card .header {
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+
+    .container .summary-card .btn {
+        height: 65px;
+        border-radius: 32px;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
